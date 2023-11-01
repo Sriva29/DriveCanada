@@ -1,0 +1,69 @@
+h1 {
+    font-family: Raleway;
+    font-style: bold;
+}
+h2{
+    font-family: Raleway;
+    font-size: 38;
+}
+body {
+font-family: Raleway;
+background-color: #f2f2f2;
+}
+
+.red{
+    color:#97272D;
+}
+
+.white{
+    color:white;
+}
+
+.headinglarge{
+    font-size: 70;
+}
+
+.headingMedium{
+    font-size: 60;
+}
+
+.headingSmall{
+    font-size: 44;
+}
+
+.bodyTextLarge{
+font-size: large;
+
+}
+.bodyTextMedium{
+    font-size: medium;
+    
+}
+.bodyTextSmall{
+    font-size: small;
+    
+}
+
+.buttonTextSmall{
+font-size: small;
+}
+.buttonTextMedium{
+font-size: medium;
+}
+.buttonTextLarge{
+font-size: large;
+}
+
+.buttonRed{
+width: 200px;
+height: 48px;
+border-radius: 5px;
+background: #97272D;
+}
+
+.buttonGrey{
+    width: 200px;
+    height: 48px;
+    border-radius: 5px;
+    background: #94A0A2;
+}
