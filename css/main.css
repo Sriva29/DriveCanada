@@ -9,7 +9,7 @@ h2{
 body {
 font-family: Raleway;
 background-color: #f2f2f2;
-background-image: url("css/main.css");
+
 }
 
 .headinglarge{
@@ -59,4 +59,58 @@ background: #97272D;
     height: 48px;
     border-radius: 5px;
     background: #94A0A2;
+}
+
+#background {
+    background-image: url(assets/images/main_bg_v1.png), url(assets/image_imports/highway-yellow-road-signs-blank-signage-boards-steel-poles-pointing-city-traffic-direction/1x/Asset1.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+	flex-direction:row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+li a {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #94A0A2;
+}
+
+.rp {
+    background-color: #f2f2f2;
+    align-items: end;
+}
+
+#webname{
+    float: center;
+    margin:0;
 }
