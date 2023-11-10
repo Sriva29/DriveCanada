@@ -3,31 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Test result</title>
 </head>
 <body>
 
-    <header>
-
-
-
-        <nav>
-            <ul>
-                <li><a href="Learner Stories.html">Learner Stories</a></li>
-                <li><a href="Practice Test.html">Driver tests</a></li>
-                <li><a href="Document Checklist.html">Document Checklist</a></li>
-                <li><a href="log In.html">log In</a></li>
-                <li><a href="Sign Up.html">Sign Up</a></li>
-            </ul>
-        </nav>
-
-        <div>
-            <img width="100" src="assets/picture1.jpg" alt="logo">
-            <h1><a href="Home.html">Drive Canada</a></h1>
-            
-        </div>
-
-    </header>
+<?php include 'header.php';?>
 
     <h1>You didn't quite make it</h1>
 
