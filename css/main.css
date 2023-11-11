@@ -61,14 +61,14 @@ background: #97272D;
     background: #94A0A2;
 }
 
-#background {
+/* #background {
     background-image: url(assets/images/main_bg_v1.png);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
     padding: 15px;
-}
+} */
 
-nav {
+/* nav {
     display: flex;
 	flex-direction:row;
     justify-content: space-between;
@@ -122,4 +122,4 @@ li a:hover:not(.active) {
 }
 header{
     width : 100%
-}
+} */

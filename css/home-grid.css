@@ -1,6 +1,4 @@
-/* * {
-    box-sizing: border-box;
-} */
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +12,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-rows: 20% 40% 20% 20%;
+    grid-template-rows: 20% 40% 20% 18%;
     grid-template-areas:
         "topnav"
         "main"
@@ -34,13 +32,11 @@ body {
 .main {
     grid-area: main;
     text-align: center;
-    max-width: 100%;
 
 }
 
 .contact {
     grid-area: contact;
-    max-width: 100%;
 }
 
 .footer {
@@ -83,9 +79,12 @@ body {
 
 .main {
     background-image: url(../assets/images/main_bg_v1.png);
-    background-size: right bottom, left top;
-    background-repeat: no-repeat, repeat; 
-    background-position: center; 
+    /* background-size: right bottom, left top; */
+    background-size: cover; /* Make the background image cover the entire 'main' element */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center; /* Center the background image */
+    text-align: center;
+    padding: 10px;
     color: #fff;
 
 }
@@ -104,13 +103,33 @@ body {
     padding-top: 40px; 
 }
 
-.footer {
-    padding: 10px;
-}
 #SB{
     border-radius: 20px;
     background: #97272D;
     border: 0px solid #97272D;
     width: 80px;
     height: 25px;
+}
+.footer{
+    display: flex;
+    padding:0 50px;
+    justify-content: space-between;
+    margin-right: 400px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.footer2{
+    padding-top: 40px; 
+    float:center;
+}
+.footer3{
+    padding-top: 40px; 
+    float:right;
+}
+#p1{
+    font-weight: bold;
+}
+#p2{
+    font-size: 12px;
 }
