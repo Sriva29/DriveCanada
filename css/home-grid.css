@@ -1,0 +1,116 @@
+/* * {
+    box-sizing: border-box;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.container {
+    display: grid;
+    grid-template-rows: 20% 40% 20% 20%;
+    grid-template-areas:
+        "topnav"
+        "main"
+        "contact"
+        "footer";
+        min-height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+
+}
+.topnav {
+    grid-area: topnav;
+}
+
+.main {
+    grid-area: main;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+.contact {
+    grid-area: contact;
+    max-width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.topnav1 {
+    float: left;
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav2 {
+    float: center;
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav3 {
+    float: right;
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav a:hover {
+    color: black;
+    background-color: #bdb9b9;
+
+}
+
+.main {
+    background-image: url(../assets/images/main_bg_v1.png);
+    background-size: right bottom, left top;
+    background-repeat: no-repeat, repeat; 
+    background-position: center; 
+    color: #fff;
+
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding:0 50px;
+    margin: 0 200px;
+
+}
+.contact1{
+    text-align: center;
+}
+.contact2{
+    padding-top: 40px; 
+}
+
+.footer {
+    padding: 10px;
+}
+#SB{
+    border-radius: 20px;
+    background: #97272D;
+    border: 0px solid #97272D;
+    width: 80px;
+    height: 25px;
+}
