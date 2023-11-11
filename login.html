@@ -3,49 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <title>Log In</title>
-
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="learner-stories.html">Learner Stories</a></li>
-                <li><a href="practice-tests.html">Driver Tests</a></li>
-                <li><a href="document-checklist.html">Document Checklist</a></li>
-                <div>
-                    <img width="100" src="assets/images/logo.png" alt="logo">
-                    <a href="home.html"><h1>Drive Canada</h1></a>
+<div class="container">
+
+
+                <div class="topnav">
+
+                    <a class="topnav1" href="learner-stories.html">Learner Stories</a>
+                    <a class="topnav1" href="practice-tests.html">Driver Tests</a>
+                    <a class="topnav1" href="document-checklist.html">Document Checklist</a>
+                    <a class="topnav3" href="login.html">Log in</a>
+                    <a class="topnav3" href="sign-up.html">Sign Up</a>
+                    <a id="dc" href="home.html">Drive Canada</a>
+                    <!-- <div class="topnav2"> -->
+                        <img id="lo"  width="70" src="assets/images/logo.png" alt="logo">
+                    <!-- </div> -->
+                
                 </div>
-                <li><a href="login.html">Log in</a></li>
-                <li><a href="sign-up.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <form action="process-contact.php" method="POST">
-        <label>Log In</label>
-        <input name="userName" type="text" required>
+        <div class="main">
 
-        <label>Password</label>
-        <input name="passWord" type="text" required>
+            <div id="fo">
 
-        <input type="checkbox"> Remember me
-        <a href="Reset Password.html"> Forgot Password</a>
-        
-        <button type="button" onclick= "href='Home.html'">Log In</button>
-        <a href="Sign Up.html"> Create Account</a>
-    </form>
+            <img class="fo1" width="70" src="assets/images/logo.png" alt="logo">
 
-    <footer>
-        <img width="100" src="assets/picture1.png" alt="logo">
-        <p>Drive Canada</p>
-        <p>2023 - 2024</p>
-        <a href="404.html">Privacy-Terms</a>
-        <a href="404.html">Company</a>
-        <a href="404.html">About Us</a>
-        
-    </footer>
+            <form action="process-contact.php" method="POST">
+                <label class="fo1">Log In</label>
+                <input id="us" class="fo1" name="userName" type="text" placeholder="email" required>
+                <input id="ps" class="fo1" name="passWord" type="text" placeholder="********                  Password" required>
+                
+                <div class="rp">
+
+                    <div>
+                    <input type="checkbox">
+                <label class="fr" for="rememberCheckbox">Remember Me</label>
+                    </div>
+
+                    <div>
+                <a class="fr" href="Reset Password.html"> Forgot Password</a>
+                    </div>
+                    
+                </div>
+
+                <button id="bu" class="fo1" type="button" onclick= "href='Home.html'">Log In</button>
+                <a id="ca" class="fo1" href="Sign Up.html"> Create Account</a>
+            </form>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+
+
+            <div class="footer1">
+            <img width="70" src="assets/images/logo.png" alt="logo">
+            <p id="p1">Drive Canada</p>
+            <p id="p2">2023-2024</p>
+            <a id="pt" href="404.html">Privacy-Terms</a>
+            </div>
+
+            <a id="au" href="404.html">About Us</a>
+            <a id="co" href="404.html">Company</a>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
