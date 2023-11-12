@@ -152,3 +152,28 @@ body {
     font-size: 40px;
     font-weight: bold;
 }
+#p404{
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/404.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+#uc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 120px; 
+    background-color:  #97272D; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 90px;
+    border-radius: 10px;
+
+}
