@@ -154,8 +154,6 @@ body {
     height: 35px;
 }
 #us{
-    display:block;
-    float: center;
     border: 1px solid #97272D;
     width: 180px;
     height: 35px;
@@ -202,4 +200,19 @@ body {
     padding: 10px;
     font-size: 16px;
     margin-top: 90px;
-    }
+}
+.fo2{
+    display: block;
+    border: 1px solid red;
+    width: 180px;
+    height: 35px;
+    margin: 20px;
+}
+#buc{
+    border-radius: 5px;
+    background: #97272D;
+    border: 0px solid #97272D;
+    width: 180px;
+    height: 35px; 
+    color: white;
+}
