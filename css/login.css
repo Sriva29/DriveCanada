@@ -277,13 +277,10 @@ body {
     margin-bottom: 0px;
     height: 200px;
 }
-/* #p404{
+#jo{
     display: flex;
     justify-content: center;
-    background-image: url(../assets/images/404.png);
+    background-image: url(../assets/images/RoadMap.png);
     background-size: cover; 
     background-repeat: no-repeat; 
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-} */
+}
