@@ -1,3 +1,5 @@
+<?php
+echo '
 <header>
     <nav>
         <ul>
@@ -7,7 +9,7 @@
             <div>
                 <img width="100" src="assets/images/logo-removebg-preview.png" alt="logo">
                 <a href="home.html">
-                    <h1>Drive Canada</h1>
+                    <p>Drive Canada</p>
                 </a>
             </div>
             <li><a href="login.html">Login</a></li>
@@ -15,3 +17,5 @@
         </ul>
     </nav>
 </header>
+'
+?>
