@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     min-height: 100vh;
     width: 100%;
     max-width: 100%;
