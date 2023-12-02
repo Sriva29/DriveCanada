@@ -9,7 +9,7 @@ h2{
 body {
 font-family: Raleway;
 background-color: #f2f2f2;
-background-image: url("css/main.css");
+
 }
 
 .headinglarge{
@@ -60,3 +60,66 @@ background: #97272D;
     border-radius: 5px;
     background: #94A0A2;
 }
+
+/* #background {
+    background-image: url(assets/images/main_bg_v1.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+} */
+
+/* nav {
+    display: flex;
+	flex-direction:row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.lp{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap:70px;
+}
+
+li a {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #94A0A2;
+}
+
+.rp {
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    align-items: end;
+    column-gap:70px;
+}
+
+#webname{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    font-size: 20px;
+    font-weight: bold;
+}
+header{
+    width : 100%
+} */
