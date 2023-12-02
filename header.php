@@ -15,7 +15,7 @@
         </div>
         <ul class="navigation-list right">
             <li class="navigation-list-item"><a href="login.php">Login</a></li>
-            <li class="navigation-list-item"><a href="sign-up.php">Sign Up</a></li>
+            <li class="navigation-list-item"><a href="signup.php">Sign Up</a></li>
         </ul>
     </nav>
 </header>
