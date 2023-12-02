@@ -14,8 +14,8 @@
 <section class="consultation-container">
         <h2>Need 1-1 Consultation?</h2>
         <h2>Sign up or contact us</h2>
-        <button type="button" onclick="href='Sign Up.html'">Sign Up</button>
-        <button type="button" onclick="href='Contact Us.html'">Contact Us</button>
+        <button type="button" onclick="href='sign-up.php'">Sign Up</button>
+        <button type="button" onclick="href='contact-us.php'">Contact Us</button>
 </section>
 <?php include 'footer.php';?>
 </body>
