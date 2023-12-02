@@ -1,5 +1,5 @@
 
-body {
+.login-body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,78 +10,17 @@ body {
     /*overflow-x: hidden;*/
     position: relative;
 }
-.container {
+.login-signup-container {
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 80% 20%;
     grid-template-areas:
-        "topnav"
-        "main"
+        "login-signup-box"
         "footer";
         min-height: 100vh;
         width: 100%;
         max-width: 100%;
         /*overflow-x: hidden;*/
-        position: relative;
-
-}
-.topnav {
-    grid-area: topnav;
-    box-sizing: border-box;
-}
-
-.main {
-    grid-area: main;
-    text-align: center;
-
-}
-
-.contact {
-    grid-area: contact;
-}
-
-
-
-.topnav1 {
-    float: left;
-    display: flex;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
-}
-
-#dc {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
-    padding-left: 0px;
-    font-weight: bold;
-    font-size: 20px;
-}
-#lo{
-    justify-content: center;
-
-}
-.topnav3 {
-    float: right;
-    display: flex;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color:  #97272D;
-    font-weight: bold;
-}
-
-.topnav a:hover {
-    color: black;
-    background-color: #bdb9b9;
-
-}
-
-.main {
+    position: relative;
     display: flex;
     justify-content: center;
     background-image: url(../assets/images/main_bg_v1.png);
@@ -90,94 +29,11 @@ body {
     text-align: center;
     padding: 10px;
     color: #fff;
-
-}
-#SB{
-    border-radius: 20px;
-    background: #97272D;
-    border: 0px solid #97272D;
-    width: 80px;
-    height: 25px;
 }
 
-
-#co{
-    padding-top: 60px; 
-    float:center;
-    text-decoration: none;
-    color: black;
-}
-#au{
-    padding-top: 60px; 
-    float:right;
-    text-decoration: none;
-    color: black;
-}
-#p1{
-    font-weight: bold;
-}
-#p2{
-    font-size: 12px;
-}
-#fo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 800px;
-        height: 400px; 
-        background-color:  #f2f2f2; 
-        color: black; 
-        text-align: center;
-        padding: 10px;
-        font-size: 16px;
-        margin-top: 90px;
-    }
-.fo1{
-    display: block;
-    margin: 20px;
-    color: red;
-}
-#ps{
-    border: 1px solid #97272D;
-    width: 180px;
-    height: 35px;
-}
-#us{
-    border: 1px solid #97272D;
-    width: 180px;
-    height: 35px;
-}
-#bu{
-    border-radius: 5px;
-    background: #97272D;
-    border: 0px solid #97272D;
-    width: 180px;
-    height: 35px; 
-    color: white;
-}
-#ca{
-    color: red;
-    text-decoration: none;
-}
-#pt{
-    text-decoration: none;
-    color: black;
-}
-#hello{
-    font-size: 40px;
-    font-weight: bold;
-}
-.fr{
-    text-decoration: none;
-    color: red;
-    font-size: 13px;
-}
-.rp{
-    display: flex;
-    justify-content: space-between;
-}
-#sufo{
+.login-signup-box {
+    grid-area: login-signup-box;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,14 +47,20 @@ body {
     font-size: 16px;
     margin-top: 90px;
 }
-.fo2{
+
+.login-label{
     display: block;
-    border: 1px solid red;
+    margin: 20px;
+    color: red;
+}
+
+.login-input{
+    border: 1px solid #97272D;
     width: 180px;
     height: 35px;
-    margin: 20px;
 }
-#buc{
+
+.login-button{
     border-radius: 5px;
     background: #97272D;
     border: 0px solid #97272D;
@@ -206,58 +68,21 @@ body {
     height: 35px; 
     color: white;
 }
-.re{
-    border-radius: 4px;
-    background: #97272D;
-    border: 0px solid #97272D;
-    width: 85px;
-    height: 35px;
-    color: white;
-    margin: 20px;
-}
-.gb{
-    border-radius: 4px;
-    background: #f33c09;
-    border: 0px solid #f33c09;
-    width: 85px;
-    height: 35px;
-    color: black;
-    margin: 20px;
-}
-.main1{
 
-    background-color: white;
+.signup-button{
+    color: red;
+    text-decoration: none;
 }
-.yp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #97272D;
-}
-.imgp{
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    margin-top: 90px;
-    margin-right: 20px;
-}
-.regb{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: left;
-    margin-top: 450px;
-    margin-left: 100px;
 
+.rememberme-label{
+    text-decoration: none;
+    color: red;
+    font-size: 13px;
 }
-.pg{
+
+.remember-forgot-links{
     display: flex;
     justify-content: space-between;
-    align-items: left;
-}
-.rb{
-    display: flex;
     align-items: left;
     color: #97272D;
     font-weight: bold;
@@ -267,10 +92,101 @@ body {
     margin-bottom: 0px;
     height: 200px;
 }
+
+/* #sufo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px; 
+    background-color:  #f2f2f2; 
+    color: black; 
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.fo2{
+    display: block;
+    border: 1px solid red;
+    width: 180px;
+    height: 35px;
+    margin: 20px;
+}
+
+#buc{
+    border-radius: 5px;
+    background: #97272D;
+    border: 0px solid #97272D;
+    width: 180px;
+    height: 35px; 
+    color: white;
+}
+
+.re{
+    border-radius: 4px;
+    background: #97272D;
+    border: 0px solid #97272D;
+    width: 85px;
+    height: 35px;
+    color: white;
+    margin: 20px;
+}
+
+.gb{
+    border-radius: 4px;
+    background: #f33c09;
+    border: 0px solid #f33c09;
+    width: 85px;
+    height: 35px;
+    color: black;
+    margin: 20px;
+}
+
+.main1{
+
+    background-color: white;
+}
+
+.yp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #97272D;
+}
+
+.img p{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin-top: 90px;
+    margin-right: 20px;
+}
+
+.regb{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 450px;
+    margin-left: 100px;
+
+}
+
+.pg{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+
 #jo{
     display: flex;
     justify-content: center;
     background-image: url(../assets/images/RoadMap.png);
     background-size: cover; 
     background-repeat: no-repeat; 
-}
+} */

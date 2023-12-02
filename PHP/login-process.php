@@ -19,19 +19,8 @@ if ($row = $stmt->fetch()) {
     // Check the admin account, if the username is "mahasri" and the password is "canada"
     if ($userName === "mahasri" && $passWord === "canada") {
 
-
-
-
-
-
     }
 
-
     } elseif ($userName === $userName && $passWord === $passWord) {
-
-
-
-
-
 
     }
