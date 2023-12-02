@@ -160,7 +160,7 @@ body{
 /* End of Footer */
 
 
-/* Main style */
+/* Main style - Index*/
 
 .main-welcome{
     background-image: url(../assets/images/main_bg_v1.png);
@@ -202,3 +202,90 @@ body{
     font-size: 1.5rem;
     color: #ffffff;
 }
+
+/* End of Main Style - Index */
+
+/* Login-Signup Page */
+/* .login-body {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+} */
+.login-signup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/main_bg_v1.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.login-signup-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px; 
+    background-color:  #f2f2f2; 
+    color: black; 
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.login-signup-logo{
+    max-width: 10px;;
+}
+
+.login-label{
+    display: block;
+    margin: 20px;
+    color: red;
+}
+
+.login-input{
+    border: 1px solid #97272D;
+    width: 180px;
+    height: 35px;
+}
+
+.login-button{
+    border-radius: 5px;
+    background: #97272D;
+    border: 0px solid #97272D;
+    width: 180px;
+    height: 35px; 
+    color: white;
+}
+
+.signup-button{
+    color: red;
+    text-decoration: none;
+}
+
+.rememberme-label{
+    text-decoration: none;
+    color: red;
+    font-size: 13px;
+}
+
+.remember-forgot-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    color: #97272D;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 200px;
+}
+/* End of Login/Signup Page */

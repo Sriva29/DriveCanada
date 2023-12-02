@@ -9,33 +9,30 @@
     <title>Log In</title>
 </head>
 
-<body>
-    <?php include 'header.php' ?>
-    <div class="container">
-        <div class="main">
-            <div id="fo">
-                <img class="fo1" width="70" src="assets/images/logo.png" alt="logo">
-                <form action="process-contact.php" method="POST">
-                    <label class="fo1">Log In</label>
-                    <input id="us" class="fo1" name="userName" type="text" placeholder="email" required>
-                    <input id="ps" class="fo1" name="passWord" type="text"
-                        placeholder="********" required>
-                    <div class="rp">
-                        <div>
-                            <input type="checkbox">
-                            <label class="fr" for="rememberCheckbox">Remember Me</label>
-                        </div>
-                        <div>
-                            <a class="fr" href="reset-password.php"> Forgot Password</a>
-                        </div>
-                    </div>
-                    <button id="bu" class="fo1" type="button" onclick="href='index.php'">Log In</button>
-                    <a id="ca" class="fo1" href="sign-up.php"> Create Account</a>
-                </form>
+<body class="login-body">
+<?php include 'header.php'?> 
+<main class="login-signup-container">
+    <div class="login-signup-box">
+        <img class="login-signup-logo" src="assets/images/logo.png" alt="Drive Canada Logo">
+        <form action="login-process.php" method="POST">
+            <label class="login-label">Log In</label>
+            <input class="login-input" name="username" type="text" placeholder="email" required>
+            <input class="login-input" name="password" type="text" placeholder="********" required>
+            <div class="remember-forgot-links">
+                <div>
+                    <input type="checkbox" name="rememberCheckbox">
+                    <label class="rememberme-label" for="rememberCheckbox">Remember Me</label>
+                </div>
+                <div>
+                    <a href="reset-password.php"> Forgot Password</a>
+                </div>
             </div>
-        </div>
+            <button class="login-button" type="submit">Log In</button>
+        </form>
+        <a class="signup-button" href="sign-up.php"> Create Account</a>
     </div>
-    <?php include 'footer.php' ?>
+</main>
+<?php include 'footer.php'?>
 </body>
 
 </html>
