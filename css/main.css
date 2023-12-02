@@ -1,125 +1,204 @@
-h1 {
-    font-family: Raleway;
-    font-style: bold;
-}
-h2{
-    font-family: Raleway;
-    font-size: 38;
-}
-body {
-font-family: Raleway;
-background-color: #f2f2f2;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/* Overall Style */
+*{
+    box-sizing: border-box;
 }
 
-.headinglarge{
-    font-size: 70;
+:root{
+    --primary-color: red;
+    --secondary-color: white;
+    --font-family: 'Raleway', sans-serif;   
 }
 
-.headingMedium{
-    font-size: 60;
+body{
+    font-size: 16px;
+    font-family: var(--font-family);
+    margin:0;
 }
 
-.headingSmall{
-    font-size: 44;
+
+/* Header Style */
+.header{
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
 }
 
-.bodyTextLarge{
-font-size: large;
-
-}
-.bodyTextMedium{
-    font-size: medium;
-    
-}
-.bodyTextSmall{
-    font-size: small;
-    
-}
-
-.buttonTextSmall{
-font-size: small;
-}
-.buttonTextMedium{
-font-size: medium;
-}
-.buttonTextLarge{
-font-size: large;
-}
-
-.buttonRed{
-width: 200px;
-height: 48px;
-border-radius: 5px;
-background: #97272D;
-}
-
-.buttonGrey{
-    width: 200px;
-    height: 48px;
-    border-radius: 5px;
-    background: #94A0A2;
-}
-
-/* #background {
-    background-image: url(assets/images/main_bg_v1.png);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    padding: 15px;
-} */
-
-/* nav {
-    display: flex;
-	flex-direction:row;
-    justify-content: space-between;
-}
-
-ul {
+.navigation {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f2f2f2;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.lp{
+.header-left{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    column-gap:70px;
+    align-items: center;
 }
 
-li a {
+.logo-title-container {
     display: flex;
-    align-items: start;
-    justify-content: space-between;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: 30px;
+    /* flex-grow: 1; */
+}
+
+.logo {
+    height: 50px;
+}
+
+.title {
+    font-size: 1.5em;
+    color: #333;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #94A0A2;
-}
-
-.rp {
-    background-color: #f2f2f2;
-    justify-content: space-between;
-    align-items: end;
-    column-gap:70px;
-}
-
-#webname{
+.navigation-list {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    margin:0;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
-header{
-    width : 100%
+
+.navigation-list.left{
+    justify-content: flex-start;
+}
+
+.navigation-list.right{
+    justify-content: flex-end;
+}
+
+.navigation-list-item {
+    margin-left: 20px;
+}
+
+.navigation-list-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.navigation-list-item a:hover {
+    color: #0275d8;
+}
+
+/* @media (max-width: 768px) {
+    .navigation-list {
+        display: none; Simple approach for smaller screens
+        Implement a mobile menu (e.g., hamburger menu) for better navigation
+    }
 } */
+
+
+/* End Header */
+
+/* Footer Style */
+.footer{
+    background-color:#ffffff;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.logo-title-container-footer, .copyright-footer, .navigation-footer{
+    display: flex;
+    align-items: center;
+}
+
+.logo-title-container-footer img{
+    height: 50px;
+}
+
+.title-footer{
+    font-size: 1.2em;
+}
+
+.navigation-list-footer{
+    list-style: none;
+}
+
+.logo-title-container-footer a{
+    text-decoration: none;
+    color: #333;
+}
+
+.navigation-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-footer a:hover{
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-title-container-footer, .copyright-footer, .navigation-footer {
+        margin-bottom: 10px;
+    }
+}
+
+/* End of Footer */
+
+
+/* Main style */
+
+.main-welcome{
+    background-image: url(../assets/images/main_bg_v1.png);
+    background-size: cover;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.main-welcome::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.welcome-container{
+    text-align: center;
+    margin-top: 10vh;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-container h1{
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-container p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}

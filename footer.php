@@ -1,8 +1,16 @@
-<footer>
-        <img width="70" src="assets/images/logo.png" alt="logo">
-        <p>Drive Canada</p>
-        <p>2023 - 2024</p>
-        <a href="404.html">Privacy-Terms</a>
-        <a href="404.html">Company</a>
-        <a href="404.html">About Us</a>
+<footer class="footer">
+        <div class="footer-container">
+                <div class="logo-title-container-footer">
+                        <a href="index.php"><img class="footer-logo" src="assets/images/logo.png" alt="Drive Canada Logo"></a>
+                        <a href="index.php" class="title-footer">Drive Canada</a>
+                </div>
+                <div class="copyright-footer">
+                        &copy; <?php echo date("Y");?> Drive Canada. All rights reserved.
+                </div>
+                <nav class="navigation-footer">
+                        <ul class="navigation-list-footer">
+                                <li class="navigation-list-item-footer"><a href="404.php">About Us</a></li>
+                        </ul>
+                </nav>
+        </div>
 </footer>

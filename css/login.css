@@ -39,9 +39,6 @@ body {
     grid-area: contact;
 }
 
-.footer {
-    grid-area: footer;
-}
 
 
 .topnav1 {
@@ -102,14 +99,7 @@ body {
     width: 80px;
     height: 25px;
 }
-footer{
-    display: flex;
-    padding:0 50px;
-    justify-content: space-between;
-    margin-right: 400px;
-    margin-left: 15px;
-    text-align: center;
-}
+
 
 #co{
     padding-top: 60px; 

@@ -1,21 +1,21 @@
 <?php
-echo '
-<header>
-    <nav>
-        <ul>
-            <li><a href="learner-stories.php">Learner Stories</a></li>
-            <li><a href="practice-tests.php">Driver Tests</a></li>
-            <li><a href="document-checklist.php">Document Checklist</a></li>
-            <div>
-                <img width="100" src="assets/images/logo-removebg-preview.png" alt="logo">
-                <a href="index.php">
-                    <p>Drive Canada</p>
-                </a>
+?>
+<header class="header">
+    <nav class="navigation">
+        <div class="header-left">
+            <div class="logo-title-container">
+                <a href="index.php"><img class="logo" src="assets/images/logo.png" alt="Drive Canada Logo"></a>
+                <a href="index.php" class="title">Drive Canada</a>
             </div>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="sign-up.php">Sign Up</a></li>
+            <ul class="navigation-list left">
+                <li class="navigation-list-item"><a href="learner-stories.php">Learner Stories</a></li>
+                <li class="navigation-list-item"><a href="practice-tests.php">Driver Tests</a></li>
+                <li class="navigation-list-item"><a href="document-checklist.php">Document Checklist</a></li>
+            </ul>
+        </div>
+        <ul class="navigation-list right">
+            <li class="navigation-list-item"><a href="login.php">Login</a></li>
+            <li class="navigation-list-item"><a href="sign-up.php">Sign Up</a></li>
         </ul>
     </nav>
 </header>
-'
-?>
