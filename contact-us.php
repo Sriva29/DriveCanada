@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/login.css"> -->
-    <title>Log In</title>
+    <title>Contact Us</title>
 </head>
 
-<body class="login-body">
+<body>
 <?php include 'header.php'?> 
 <main class="login-signup-container">
     <div class="login-signup-box">
@@ -17,22 +16,23 @@
             <img src="assets/images/logo.png" alt="Drive Canada Logo">
             <!-- <h1>Drive Canada</h1> -->
         </div>
-        <h2>Log In</h2>
-        <form class="login-signup-form" action="login-process.php" method="POST">
-            <input name="email" type="email" placeholder="Email" required>
-            <input name="password" type="password" placeholder="Enter Your Password" required>
-            <div class="remember-forgot-links">
+        <h2>Contact Us</h2>
+        <form class="login-signup-form" action="contact-process.php" method="POST">
+            <input name="name" type="text" placeholder="Your name" required>
+            <input name="email" type="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Let us know how we can help you" required> </textarea>
+            <!-- <div class="remember-forgot-links">
                 <div class="remember-me">
                     <input id="rememberCheckbox" type="checkbox" name="rememberCheckbox">
                     <label for="rememberCheckbox">Remember Me</label>
                 </div>
                 <div>
-                    <a href="forgot-password.php"> Forgot Password</a>
+                    <a href="reset-password.php"> Forgot Password</a>
                 </div>
-            </div>
+            </div> -->
             <div class="login-signup-buttons">
-            <button class="login-button" type="submit">Log In</button>
-            <button class="signup-button" type="button" onclick="location.href ='signup.php'">Create Account</button>
+                <button class="login-button" type="submit">Send Message</button>
+                <!-- <button class="signup-button" type="button" onclick="location.href ='signup.php'">Create Account</button> -->
             </div>
         </form>
     </div>

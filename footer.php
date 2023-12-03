@@ -9,7 +9,7 @@
                 </div>
                 <nav class="navigation-footer">
                         <ul class="navigation-list-footer">
-                                <li class="navigation-list-item-footer"><a href="404.php">About Us</a></li>
+                                <li class="navigation-list-item-footer"><a href="contact-us.php">Contact Us</a></li>
                         </ul>
                 </nav>
         </div>

@@ -225,6 +225,7 @@ body{
     height: 60vh;
     background-color:  #f2f2f2; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 .login-signup-logo-container{
@@ -239,12 +240,22 @@ body{
     width: 100px;
 }
 
-.login-signup-form input[type="email"], .login-signup-form input[type="password"]{
+.login-signup-form input[type="email"], .login-signup-form input[type="password"], .login-signup-form input[type="text"]{
     width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.login-signup-form textarea{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 65px;
+    /* resize: vertical; */
 }
 
 .remember-forgot-links{
@@ -263,7 +274,7 @@ body{
 }
 
 .remember-forgot-links a{
-    margin-right: 5px;
+    margin-right: 15px;
     text-decoration: none;
     color: #97272D;
 }
