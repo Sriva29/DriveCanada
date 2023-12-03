@@ -8,9 +8,9 @@
                 <a href="index.php" class="title">Drive Canada</a>
             </div>
             <ul class="navigation-list left">
-                <li class="navigation-list-item"><a href="learner-stories.php">Learner Stories</a></li>
-                <li class="navigation-list-item"><a href="practice-tests.php">Driver Tests</a></li>
-                <li class="navigation-list-item"><a href="document-checklist.php">Document Checklist</a></li>
+                <!-- <li class="navigation-list-item"><a href="learner-stories.php">Learner Stories</a></li> -->
+                <!-- <li class="navigation-list-item"><a href="practice-tests.php">Practice Tests</a></li> -->
+                <!-- <li class="navigation-list-item"><a href="document-checklist.php">Document Checklist</a></li> -->
             </ul>
         </div>
         <ul class="navigation-list right">

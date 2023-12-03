@@ -12,6 +12,7 @@
     <div class="welcome-container">
         <h1>Welcome to Drive Canada</h1>
         <p>Get ready to take your driver's test in Canada</p>
+        <button onclick="location.href='practice-tests.php'">Practice for your test!</button>
     </div>
 </main>
 <!-- <section class="consultation-container">
