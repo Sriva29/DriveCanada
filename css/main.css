@@ -412,7 +412,7 @@ body{
     }
 }
 
-.g1-container{
+.testpage-container{
     display: flex;
     justify-content: center;
     background-image: url(../assets/images/quiz-bg.png);
@@ -486,4 +486,33 @@ body{
 
 .nav-button:hover{
     filter: brightness(140%);
+}
+
+.image-answer{
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.image-answer:hover{
+    border-color: #ccc;
+}
+
+.image-answer.selected{
+    border-color: #4caf50;
+}
+
+.image-answers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.image-answers img{
+    max-width: 100%;
+    height: auto;
 }

@@ -6,3 +6,13 @@ answers.forEach((button)=>{
         this.classList.add('selected');
     });
 })
+
+
+const imageAnswers = document.querySelectorAll(".image-answer");
+
+imageAnswers.forEach((button)=>{
+    button.addEventListener("click", function(){
+        document.querySelectorAll('image-answer').forEach(btn =>btn.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+})

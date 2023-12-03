@@ -12,11 +12,9 @@
     <div class="question-container">
         <div class="question-number">currentquestion#/total#ofquestions</div>
         <div class="question">question</div>
-        <div class="answers">
-            <button class="answer">answer1</button>
-            <button class="answer">answer2</button>
-            <button class="answer">answer3</button>
-            <button class="answer">answer4</button>
+        <div class="answers image-answers">
+            <button class="answer image-answer"><img src="/assets/images/road-sign.png" alt="option 1"></button>
+            <button class="answer image-answer"><img src="/assets/images/road-sign.png" alt="option 2"></button>
         </div>
     <nav class="test-navigation">
         <button class="nav-button" id="back-btn" onclick="location.href='practice-tests.php'">All Tests</button>
