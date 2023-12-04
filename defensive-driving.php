@@ -10,20 +10,22 @@
 <?php include 'header.php'?>
 <main class="testpage-container">
     <div class="question-container">
-        <div class="question-number">currentquestion#/total#ofquestions</div>
-        <div class="question">question</div>
-        <div class="answers image-answers">
-            <button class="answer image-answer"><img src="assets/images/road-sign.png" alt="option 1"></button>
-            <button class="answer image-answer"><img src="assets/images/road-sign.png" alt="option 2"></button>
+        <div class="question-number"><h1>Defensive Driving Simulator</h1></div>
+        <div class="question">
+            <h2>Simulator Instructions</h2>
+            <p>Watch the video and click on the hazards on the screen</p>
+            <button class="nav-button" id="start-btn">Start</button>    
         </div>
-    <nav class="test-navigation">
+        <div id="video"></div>
+    <!-- <nav class="test-navigation">
         <button class="nav-button" id="back-btn" onclick="location.href='practice-tests.php'">All Tests</button>
         <button class="nav-button" id="back-btn">Back</button>
         <button class="nav-button" id="skip-btn">Skip</button>
         <button class="nav-button" id="submit-btn">Submit</button>
-    </nav>
+    </nav> -->
     </div>
 </main>
 <?php include 'footer.php'?>
+<script src="main.js"></script>
 </body>
 </html>
