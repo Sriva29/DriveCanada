@@ -18,6 +18,7 @@
         </div>
         <h2>Sign Up</h2>
         <form class="login-signup-form" action="signup-process.php" method="POST">
+            <input name="username" type="text" placeholder="username" required>
             <input name="email" type="email" placeholder="Email" required>
             <input name="password" type="password" placeholder="Enter Your Password" required>
             <input name="password-confirm" type="password" placeholder="Confirm Your Password" required>
