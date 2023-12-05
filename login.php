@@ -19,7 +19,7 @@
         </div>
         <h2>Log In</h2>
         <form class="login-signup-form" action="login-process.php" method="POST">
-            <input name="email" type="email" placeholder="Email" required>
+            <input name="username" type="text" placeholder="Username" required>
             <input name="password" type="password" placeholder="Enter Your Password" required>
             <div class="remember-forgot-links">
                 <div class="remember-me">
