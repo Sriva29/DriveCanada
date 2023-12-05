@@ -23,7 +23,7 @@ imageAnswers.forEach((button)=>{
 const videoStartBtn = document.querySelector("#start-btn");
 videoStartBtn.addEventListener("click", function(){
     const video = document.querySelector("#video");
-    video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/or6G1gDKjrc?si=DmWlI-hd0BTj5IPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    video.innerHTML = '<iframe src="https://player.vimeo.com/video/500440443?muted=1&amp;controls=0&amp;loop=0&amp;background=1&amp;app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="defensivedrivecanada" data-ready="true"></iframe>'
     video.style.display = 'block';
     const videoQuestion = document.querySelector(".question");
     videoQuestion.style.display = 'none';
