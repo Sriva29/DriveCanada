@@ -1,26 +1,26 @@
 <?php session_start();
-$userName = $_POST["userName"];
-$passWord = $_POST["passWord"];
+include("connect.php");
 
-$dsn = "mysql:host=localhost;dbname=drivecanada;charset=utf8mb4";
-$dbusername = "root";  
-$dbpassword = "";
+// $email = $_POST["email"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-$pdo = new PDO($dsn, $dbusername, $dbpassword);
-$stmt = $pdo->prepare("SELECT `userId`, `userName` 
+$stmt = $pdo->prepare("SELECT `userId`, `username` 
 	FROM `users` 
-	WHERE `userName` = '$userName' AND `passWord` = '$passWord';");
+	WHERE `username` = '$username' AND `password` = '$password';");
 $stmt->execute();
 
 if ($row = $stmt->fetch()) {
     $_SESSION["userId"] = $row['userId'];
-	$_SESSION["userName"] = $row['userName'];
+	$_SESSION["username"] = $row['username'];
 	$_SESSION["loggedIn"] = true;
-    // Check the admin account, if the username is "mahasri" and the password is "canada"
-    if ($userName === "mahasri" && $passWord === "canada") {
+    
+    if ($username === $username && $password === $password)  {
+        header('location:index.php');?>
+    <?php      
+    }   
+
+
 
     }
-
-    } elseif ($userName === $userName && $passWord === $passWord) {
-
-    }
+    ?>

@@ -1,4 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 ?>
 <header class="header">
     <nav class="navigation">
@@ -14,8 +18,17 @@
             </ul>
         </div>
         <ul class="navigation-list right">
-            <li class="navigation-list-item"><a href="login.php">Login</a></li>
-            <li class="navigation-list-item"><a href="signup.php">Sign Up</a></li>
+        <?php
+        if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true){
+            echo($_SESSION["username"]);
+                echo`<li class="navigation-list-item"> Hello, {$_SESSION["username"]}</li>`;
+                echo '<li class="navigation-list-item"><a href="logout.php">Log out</a></li>';       
+            } else {
+                echo '<li class="navigation-list-item"><a href="login.php">Login</a></li>';
+                echo '<li class="navigation-list-item"><a href="signup.php">Sign Up</a></li>';
+            }?>
+            <!-- <li class="navigation-list-item"><a href="login.php">Login</a></li>
+            <li class="navigation-list-item"><a href="signup.php">Sign Up</a></li> -->
         </ul>
     </nav>
 </header>
