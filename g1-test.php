@@ -35,21 +35,13 @@ if($stmt->execute()){
         <div class="question"><?=htmlspecialchars($QA["questions"])?></div>
         <div class="answers">
             <?php foreach($options as $option):?>
-                <button class="answer"><?= htmlspecialchars($option)?></button>
+                <button class="answer" data-answer="<?= htmlspecialchars($option)?>"><?= htmlspecialchars($option)?></button>
             <?php endforeach;?>
-            <!-- <button class="answer">$QA[""]</button>
-            <button class="answer">answer2</button>
-            <button class="answer">answer3</button>
-            <button class="answer">answer4</button> -->
         </div>
-    <nav class="test-navigation">
-        <button class="nav-button" id="back-btn" onclick="location.href='practice-tests.php'">All Tests</button>
-        <button class="nav-button" id="back-btn">Back</button>
-        <button class="nav-button" id="skip-btn">Skip</button>
-        <button class="nav-button" id="submit-btn">Submit</button>
-    </nav>
+        <?php include 'navigation.php'?>
     </div>
 </main>
 <?php include 'footer.php'?>
+<script src="main.js"></script>
 </body>
 </html>

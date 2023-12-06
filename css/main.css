@@ -465,7 +465,7 @@ body{
 }
 
 .answer.selected{
-    background-color: #4caf50;
+    background-color: rgb(25, 165, 208);
     color:white;
 }
 
@@ -502,7 +502,7 @@ body{
 }
 
 .image-answer.selected{
-    border-color: #4caf50;
+    border-color: #af964c;
 }
 
 .image-answers{

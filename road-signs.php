@@ -16,12 +16,7 @@
             <button class="answer image-answer"><img src="assets/images/road-sign.png" alt="option 1"></button>
             <button class="answer image-answer"><img src="assets/images/road-sign.png" alt="option 2"></button>
         </div>
-    <nav class="test-navigation">
-        <button class="nav-button" id="back-btn" onclick="location.href='practice-tests.php'">All Tests</button>
-        <button class="nav-button" id="back-btn">Back</button>
-        <button class="nav-button" id="skip-btn">Skip</button>
-        <button class="nav-button" id="submit-btn">Submit</button>
-    </nav>
+        <?php include 'navigation.php'?>
     </div>
 </main>
 <?php include 'footer.php'?>
