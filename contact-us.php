@@ -18,9 +18,9 @@
         </div>
         <h2>Contact Us</h2>
         <form class="login-signup-form" action="contact-process.php" method="POST">
-            <input name="name" type="text" placeholder="Your name" required>
-            <input name="email" type="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Let us know how we can help you" required> </textarea>
+            <input name="contactName" type="text" placeholder="Your name" required>
+            <input name="contactEmail" type="email" placeholder="Your email" required>
+            <textarea name="contactMessage" placeholder="Let us know how we can help you" required> </textarea>
             <!-- <div class="remember-forgot-links">
                 <div class="remember-me">
                     <input id="rememberCheckbox" type="checkbox" name="rememberCheckbox">
