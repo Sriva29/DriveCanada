@@ -32,7 +32,7 @@ if($stmt->execute()){
 <main class="testpage-container">
     <div class="question-container">
         <div class="question-number"><span id="current-question-number"></span>/10</div>
-        <div class="question"><?=htmlspecialchars($QA["questions"])?></div>
+        <div class="question"><?=htmlspecialchars($QA["question"])?></div>
         <div class="answers">
             <?php foreach($options as $option):?>
                 <button class="answer" data-answer="<?= htmlspecialchars($option)?>"><?= htmlspecialchars($option)?></button>
@@ -44,6 +44,7 @@ if($stmt->execute()){
 <?php include 'footer.php'?>
 
 <script src="mcq.js"></script>
-<script> currentQuestionId = <?=$QA["questionId"]?> </script>
+<script> currentQuestionId = <?=$QA["questionId"]?>;
+questionType = "g1test" </script>
 </body>
 </html>

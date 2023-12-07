@@ -10,13 +10,13 @@
 <?php include 'header.php'?>
 <?php include 'connect.php'?>
 <?php 
-$stmt = $pdo->prepare("SELECT * FROM `drag_drop_questions` ORDER BY `questionId` ASC LIMIT 1");
+$stmt = $pdo->prepare("SELECT * FROM `roadsignstest` ORDER BY `questionId` ASC LIMIT 1");
 if($stmt->execute()){
     $QA = $stmt->fetch();
     if($QA){
         // need to shuffle answers
-        $descriptions = [$QA["correctDescription"], $QA["otherDescription"]];
-        shuffle($descriptions);
+        $images = [$QA["correctImagePath"], $QA["incorrectImagePath"]];
+        shuffle($images);
     }
     else{
         echo "You got a problem, mate. The fetch ain't workin'";
@@ -27,23 +27,19 @@ if($stmt->execute()){
 ?>
 <main class="testpage-container">
     <div class="question-container">
-        <div class="question-number"><span id="current-question-number"></span>/10</div>
-        <div class="question"><?=htmlspecialchars($questionData['questionText'])?></div>
-        <div class="drag-drop-container">
-            <img src="<?= htmlspecialchars($questionData['imagePath'])?>" id="draggable-sign" draggable="true" alt="Road Sign Ontario">
-        </div>
-        <div class="description-boxes">
-            <?php
-                foreach($descriptions as $description){
-                    $isCorrect = ($desc === $questionData['correctDescription']) ? 'true' : 'false';
-                    echo '<div class="description-box" data-correct="' . $isCorrect . '">' . htmlspecialchars($desc) . '</div>';
-                }
-            ?>
+        <div class="question-number"><span id="current-question-number"></span>/5</div>
+        <div class="question"><?=htmlspecialchars($QA['question'])?></div>
+        <div class="image-answers">
+            <?php foreach($images as $image):?>
+                <img class="image-answer" src="<?= htmlspecialchars($image)?>" alt="Road Sign Ontario">
+            <?php endforeach;?>
         </div>
         <?php include 'navigation.php'?>
     </div>
 </main>
 <?php include 'footer.php'?>
 <script src="mcq.js"></script>
+<script> currentQuestionId = <?=$QA["questionId"]?>; 
+questionType = "roadsignstest" </script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 let selectedAnswer = null;
 let currentQuestionId;
 let currentAttempt = 1;
+let questionType;
 
 function attachAnswerButtonListeners(){
     const answers = document.querySelectorAll(".answer");
@@ -16,12 +17,24 @@ function attachAnswerButtonListeners(){
         });
     });
 }
-
+// gotta refactor this laters
+function attachImageListeners(){
+    const images = document.querySelectorAll('.image-answer');
+    images.forEach((img)=>{
+        img.addEventListener('click', function(){
+            images.forEach(image=>image.classList.remove('selected'));
+            this.classList.add('selected');
+            selectedAnswer = this.getAttribute('src');
+            console.log(`Your selected image path: ${selectedAnswer}`);
+        })
+    })
+}
+attachImageListeners();
 attachAnswerButtonListeners();
 
 const submitBtn = document.querySelector("#submit-btn");
-const backBtn = document.querySelector("#back-btn");
-const skipBtn = document.querySelector("#skip-btn");
+// const backBtn = document.querySelector("#back-btn");
+// const skipBtn = document.querySelector("#skip-btn");
 const allTestsBtn = document.querySelector("#all-tests-btn");
 const question = document.querySelector(".question");
 
@@ -41,40 +54,58 @@ submitBtn.addEventListener("click", function(){
     if(selectedAnswer){
         fetch('next-question.php', {
             method: 'POST',
-            body: JSON.stringify({answer: selectedAnswer, questionId: currentQuestionId, attempt: currentAttempt}),
+            body: JSON.stringify({answer: selectedAnswer, questionId: currentQuestionId, attempt: currentAttempt, questionType: questionType}),
             headers: {'content-type': 'application/json' }
         }).then(response => response.json())
         .then(data => {
             console.log(data);
             if (!data.endOfTest) {
                 updateQuestion(data);
-                currentQuestionId = data.nextQuestionId;
             } else {
                 console.log('fin. Test ova!');
                 displayEndOfTestMessage(data.score);
             }
         })
-        .catch(error=>console.log('Mais non! Nous avons un probleme! Voila: ', error));
+        .catch(error=>console.error('Mais non! Nous avons un probleme! Voila: ', error));
     } else{
         console.log("No answer selected. Cliquer un reponse");
     }
 });
 
 function updateQuestion(questionData) {
+
+    currentQuestionId = questionData.nextQuestionId; 
+    selectedAnswer = null;
+    questionType = questionData.questionType;
+    
     const questionText = document.querySelector('.question');
-    const answersDiv = document.querySelector('.answers');
-
     questionText.textContent = questionData.questionText;
-    answersDiv.innerHTML = '';
 
-    questionData.options.forEach(option => {
-        const button = document.createElement('button');
-        button.className = 'answer';
-        button.textContent = option;
-        button.setAttribute('data-answer', option);
-        answersDiv.appendChild(button);
-    });
-    attachAnswerButtonListeners();  
+    const answersDiv = document.querySelector('.answers');
+    const imageAnswersDiv = document.querySelector('.image-answers');
+    if (answersDiv) {answersDiv.innerHTML = '';}
+    if (imageAnswersDiv) {imageAnswersDiv.innerHTML = '';}
+    console.log(questionData.questionType);
+    if (questionData.questionType === 'roadsignstest') {
+        questionData.options.forEach(imagePath => {
+            const img = document.createElement('img');
+            img.className = 'image-answer';
+            img.src = imagePath;
+            img.alt = "Road Sign Ontario";
+            imageAnswersDiv.appendChild(img);
+        });
+        attachImageListeners();
+    } else {
+        questionData.options.forEach(option => {
+            const button = document.createElement('button');
+            button.className = 'answer';
+            button.textContent = option;
+            button.setAttribute('data-answer', option);
+            answersDiv.appendChild(button);
+        });
+        attachAnswerButtonListeners();
+    }
+  
 }
 
 
@@ -100,3 +131,4 @@ function restartTest(){
     location.reload();
     currentQuestionNumber.innerHTML = 1;
 }
+

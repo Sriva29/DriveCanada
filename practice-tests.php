@@ -19,12 +19,12 @@
         <div class="test-card" onclick="location.href='road-signs.php'">
             <img src="assets/images/road-sign.png" alt="Image of a Car on the Road">
             <h2>Road Signs Test</h2>
-            <p>10 Questions</p>
+            <p>5 Questions</p>
         </div>
         <div class="test-card" onclick="location.href='defensive-driving.php'">
             <img src="assets/images/defensive-driving.png" alt="Image of a Car on the Road">
             <h2>Defensive Driver Simulator</h2>
-            <p>10 Questions</p>
+            <p>5 Questions</p>
         </div>
     </div>
 </main>
