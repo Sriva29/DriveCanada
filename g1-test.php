@@ -26,12 +26,12 @@ if($stmt->execute()){
     echo "Now that's interesting. . . No statement for you 🖖";
 }
 ?>
-<script> let currentQuestionId = <?=$QA["questionId"]?> </script>
+
 
 
 <main class="testpage-container">
     <div class="question-container">
-        <div class="question-number">currentquestion#/total#ofquestions</div>
+        <div class="question-number"><span id="current-question-number"></span>/10</div>
         <div class="question"><?=htmlspecialchars($QA["questions"])?></div>
         <div class="answers">
             <?php foreach($options as $option):?>
@@ -42,6 +42,8 @@ if($stmt->execute()){
     </div>
 </main>
 <?php include 'footer.php'?>
-<script src="main.js"></script>
+
+<script src="mcq.js"></script>
+<script> currentQuestionId = <?=$QA["questionId"]?> </script>
 </body>
 </html>
