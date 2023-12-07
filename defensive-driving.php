@@ -35,6 +35,6 @@
     </div>
 </main>
 <?php include 'footer.php'?>
-<script src="main.js"></script>
+<script src="interactive-video.js"></script>
 </body>
 </html>
