@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentTime = videoElement.currentTime;
         if (currentTime >= 4 && currentTime <= 8) {
             hazardDiv.style.display = 'block';
-            // Adjust height based on time
+            // Need to adjust this height
             const percentage = 40 - ((currentTime - 4) / 4) * 40;
             hazardDiv.style.height = `${percentage}%`;
         } else {
