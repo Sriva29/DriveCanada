@@ -30,9 +30,9 @@ function makeInteractive(){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const videoElement = document.getElementById('defensive-video');
-    const hazardDiv = document.getElementById('hazard-1');
-    const feedbackDiv = document.getElementById('feedback');
+    const videoElement = document.querySelector('#defensive-video');
+    const hazardDiv = document.querySelector('#hazard-1');
+    const feedbackDiv = document.querySelector('#feedback');
 
     videoElement.addEventListener('click', function() {
         // Toggle play/pause
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function checkHazard(currentTime) {
     if (currentTime < 4) {
-        document.getElementById('feedback').innerHTML = "No hazards here...play on";
+        document.querySelector('#feedback').innerHTML = "No hazards here...play on";
     }
 }
 
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const videoContainer = document.querySelector("#video-container");
         videoContainer.style.display = 'block';
 
-        const videoElement = document.getElementById('defensive-video');
-        videoElement.style.maxHeight = '40vh'; // Set the max height of the video
+        const videoElement = document.querySelector('#defensive-video');
+        videoElement.style.maxHeight = '40vh';
 
         const videoQuestion = document.querySelector(".question");
         videoQuestion.style.display = 'none';
@@ -87,9 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function makeInteractive() {
-    const videoElement = document.getElementById('defensive-video');
-    const hazardDiv = document.getElementById('hazard-1');
-    const feedbackDiv = document.getElementById('feedback');
+    const videoElement = document.querySelector('#defensive-video');
+    const hazardDiv = document.querySelector('#hazard-1');
+    const feedbackDiv = document.querySelector('#feedback');
 
     videoElement.addEventListener('click', function() {
         // Toggle play/pause
@@ -122,6 +122,6 @@ function makeInteractive() {
 
 function checkHazard(currentTime) {
     if (currentTime < 4) {
-        document.getElementById('feedback').innerHTML = "No hazards here...play on";
+        document.querySelector('#feedback').innerHTML = "No hazards here...play on";
     }
 }
